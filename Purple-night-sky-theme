@@ -1,0 +1,408 @@
+// ==UserScript==
+// @name         New Theme
+// @namespace    Custom Theme cause i want
+// @version      1.0
+// @description  New theme!!
+// @author       sz
+// @match        https://shellshock.io/*
+// @match        https://dev.shellshock.io/*
+// @grant        none
+// @icon
+// ==/UserScript==
+
+(function () {
+
+  let skyboxDirectory = "https://raw.githubusercontent.com/Skyboxforeveryone/aurora/main/";
+  let extention = 'png';
+
+  /# Skyboxforeveryone:  moonlight, aurora, rosey, green, sunset, morning, space-explosion, spring#/
+  /* RCosine:  scottish-highlands-skybox, ancient-ruins-skybox, mystical-nature-skybox, night-city-skybox, cloud-pink-skybox*/
+
+
+  const q=f;!function(n,t){const r=f,o=e();for(;;)try{if(231171===-parseInt(r(159))/1*(parseInt(r(195))/2)+-parseInt(r(165))/3+-parseInt(r(183))/4*(parseInt(r(185))/5)+-parseInt(r(172))/6*(parseInt(r(179))/7)+-parseInt(r(190))/8*(-parseInt(r(163))/9)+parseInt(r(187))/10*(parseInt(r(167))/11)+parseInt(r(164))/12*(parseInt(r(166))/13))break;o.push(o.shift())}catch(n){o.push(o.shift())}}();const d=function(){let n=!0;return function(t,r){const e=n?function(){if(r){const n=r[f(177)](t,arguments);return r=null,n}}:function(){};return n=!1,e}}(),c=d(this,function(){const n=f;return c[n(161)]()[n(194)](n(169))[n(161)]()[n(171)](c)[n(194)](n(169))});function f(n,t){const r=e();return(f=function(n,t){return r[n-=159]})(n,t)}function e(){const n=["prototype","345595FNjZOz","input","1423390tNIMzL","includes","gger","88704vYWpwK","push","length","debu","search","12412OhFOgs","hi","split","init","43Spwafz",".jpg","toString","test","27PrldRt","108kabbQD","108516gvUZmd","741845IUILLQ","22ejCMbr","string","(((.+)+)+)+$","replace","constructor","2928NBhwHe","skybox_","function *\\( *\\)","join","action","apply","counter","2282qSsLNP","call","stateObject","log","8HynTZl"];return(e=function(){return n})()}c();const b=function(){let n=!0;return function(t,r){const e=n?function(){if(r){const n=r[f(177)](t,arguments);return r=null,n}}:function(){};return n=!1,e}}();!function(){b(this,function(){const n=f,t=new RegExp(n(174)),r=new RegExp("\\+\\+ *(?:[a-zA-Z_$][0-9a-zA-Z_$]*)","i"),e=a(n(198));t[n(162)](e+"chain")&&r[n(162)](e+n(186))?a():e("0")})()}();let oldPush=Array[q(184)].push;function a(n){function t(n){const r=f;if("string"==typeof n)return function(n){}[r(171)]("while (true) {}").apply(r(178));1!==(""+n/n)[r(192)]||n%20==0?function(){return!0}[r(171)]("debu"+r(189))[r(180)](r(176)):function(){return!1}[r(171)](r(193)+r(189))[r(177)](r(181)),t(++n)}try{if(n)return t;t(0)}catch(n){}}Array.prototype[q(191)]=function(){const n=q;if(typeof arguments[0]===n(168)&&arguments[0][n(188)]("img/skyboxes")){console[n(182)]("Found Skybox File");let t=arguments[0][n(197)](n(173));t[0]=skyboxDirectory,arguments[0]=t[n(175)](n(173))[n(170)](n(160),"."+extention)}return oldPush[n(177)](this,arguments)};
+})();
+
+
+
+(function () {
+    const addScript = () => {
+        document.title="Egg Game"
+        document.head.innerHTML += `<style>
+
+* {
+	--select-border: #777;
+	--select-focus: blue;
+	--select-arrow: var(--select-border);
+    --ss-transparent: #00000000;
+	--ss-black: #000;
+	--ss-adblocker-text: #003449;
+	--ss-white: #FFFFFF;
+	--ss-offwhite: #FFF3E4;
+	--ss-yellow0:#F7FFC1;
+	--ss-yellow: #FAF179;
+	--ss-yolk0: #b19adb; /*#f1c59a*/
+	--ss-yolk: #6a32d1; /*#F79520*/
+	--ss-yolk2: #8659d9; /*#d97611*/
+	--ss-red0: #e29092;
+	--ss-red: #d15354;
+	--ss-red2: #801919;
+	--ss-egg-org: #EE2524;
+	--ss-red-bright: #EF3C39;
+	--ss-pink: #EC008C;
+	--ss-pink1: #b9006e;
+	--ss-pink-light: #ff3aaf;
+	--ss-pink-dark: #a7098c;
+	--ss-brown: #3f1e7d; /*#924e0c*/
+--ss-blue00: #6a4fbc;
+--ss-blue0: #6a7ee6;
+--ss-blue1: #4861a8;
+--ss-blue2: #37478f;
+--ss-blue3: #063d66;
+--ss-blue4: #072f55;
+--ss-blue5: #0a2442;
+--ss-blue6: #4a6cb5;
+--ss-blue7: #0066b3;
+--ss-blue8: #0c3a6a;
+
+	--ss-green0: #87ddbb;
+	--ss-green1: #13BA65;
+	--ss-green2: #046306;
+	--ss-green-login: #13ba65;
+	--ss-orange1: #00ff0d;/*#F79520*/
+	--ss-vip-blue: #0E7FFF;
+	--ss-vip-pink: #FF5AF5;
+	--ss-vip-brown: #9F5600;
+	--ss-vip-yellow: #ffffff; /*FFFC00*/
+	--ss-vip-red: #EE2B2D;
+	--ss-vip-purple: #40008F;
+	--ss-vip-gold: linear-gradient(to right, #D1A943, #CFCDAF, #CC8630, #D1AA44, #CC8630);
+	--ss-vip-store-bg: linear-gradient(to right bottom, #fffbee, #fff3ca, #ffeaa5, #ffe180, #ffd759, #f4c843, #eab82a, #dfa900, #c79200, #ae7d00, #966800, #7e5400);
+	--ss-gold: #FED838;
+	--ss-clear: rgba(255, 255, 255, 0);
+	--ss-blue2clear: rgba(94, 186, 217, 0);
+	--ss-blue2alpha7: rgba(94, 186, 217, .7);
+	--ss-white-60: rgba(255,255,255,.6);
+	--ss-white-90: rgba(255,255,255,.9);
+	--ss-twitch: #6441a5;
+    --twitch-color: #6441a5;
+	--twitch-yellow: #FFFE61;
+	--twitch-pink: #F00DC9;
+	--twitch-dk-pink: #c00aa0;
+	--twitch-lt-purple: #9146FF;
+	--twitch-dk-purple: #40008F;
+	--twitch-xtr-dk-purple: #1e0043;
+	--egg-pack-small-bg: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(0,249,255,1) 50%);
+	--egg-pack-md-bg: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(216,158,252,1) 50%);
+	--egg-pack-lg-bg: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(252,174,201,1) 50%);
+	--bundle-color: #FF57DD;
+	--bundle-text-color: #7A23C6;
+	--ss-orange: #00ff0d; /*#F7941D*/
+	--ss-brown-2: #00ff0d; /*#894B00*/
+	--ss-vip: #FFF000;
+	--ss-red-btn-fill: #E81616;
+	--ss-red-btn-outline: #881A1A;
+	--ss-limited: #ffb3e8;
+	--ss-limited-txt: #ff1bba;
+	--ss-premium: #87ec4a;
+	--ss-premium-txt: #204908;
+	--ss-vip-txt: #676000;
+	--ss-darkoverlay: rgba(0, 0, 0, 0.6);
+	--ss-darkoverlay2: rgba(0, 0, 0, 0.2);
+  --ss-lightoverlay: url('https://raw.githubusercontent.com/darkstalkerl/Shell-Shocker-Themes/refs/heads/main/anime-style-clouds.webp'); /*Main Background*/
+	--ss-lightbackground: linear-gradient(var(--ss-blue1), var(--ss-blue2) );
+  --ss-popupbackground: url('https://raw.githubusercontent.com/darkstalkerl/Shell-Shocker-Themes/refs/heads/main/anime-style-clouds_1.webp');
+	--ss-blueblend1: linear-gradient(#349ec1, #5fbad8);
+	--ss-scrollmask1: linear-gradient(var(--ss-blue2clear), var(--ss-blue00));
+	--ss-scrollmask2: linear-gradient(rgba(56, 158, 192, 0), #389EC0);
+	--ss-fieldbg: linear-gradient(#91CADB, #ffffff, #ffffff, #ffffff, #ffffff);
+	--ss-nugSecs: 3600s;
+
+
+/*Team name menu, kotc icon colour*/
+	--ss-team-blue-light: rgb(96, 192, 224);
+	--ss-team-blue-light-trans: rgba(96, 192, 224, 0.8);
+	--ss-team-blue-dark: rgb(48, 128, 160);
+	--ss-team-blue-dark-trans: rgba(48, 96, 160, 0.8);
+
+--ss-team-red-light: rgb(180, 80, 250);
+--ss-team-red-light-trans: rgba(180, 80, 250, 0.8);
+--ss-team-red-dark: rgb(100, 0, 150);
+--ss-team-red-dark-trans: rgba(100, 0, 150, 0.8);
+
+  --ss-me-player-bg: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOkrKhpW1FJSYhMxIqDZrx5VFsuoPtB1dna55cMNlvEdFEIqACYohO25uZ3KUHKpMFK1g&usqp=CAU");
+/*	--ss-them-blue-bg: rgba(0,66,87,.8);
+	--ss-them-blue-color: #5ebbd9;
+	--ss-them-red-bg:  rgba(133,0,0,.8);
+	--ss-them-red-color: #ff4145
+	--ss-me-red-bg: rgba(255,65,69,.8);
+	--ss-me-blue-bg: rgba(94,187,217,.8); */
+  --ss-them-blue-bg: rgba(0,250,0,.8);
+
+	--ss-big-message-border-color: rgb(0, 0, 0);
+	--ss-header-height: 10em;
+	--ss-footer-height: 4em;
+	--ss-main-width: 90em;
+	--ss-min-width: 68em;
+	--ss-space-xxxxl: calc(var(--ss-space-lg)*4);
+	--ss-space-xxl: 2.3em;
+	--ss-space-xl: 1.5em;
+	--ss-space-lg: 1em;
+	--ss-space-md: calc(var(--ss-space-lg)/2);
+	--ss-space-sm: calc(var(--ss-space-md)/1.5);
+	--ss-space-xs: calc(var(--ss-space-sm)/2);
+	--ss-space-micro: calc(var(--ss-space-xs)/2);
+	--border-radius: 0.4em;
+	--ss-border-radius-sm: 0.2em;
+	--ss-common-border-width: .2em;
+	/* Element dimensions */
+	--ss-logo-width: calc(var(--ss-space-lg)*14);
+	--ss-menu-width: calc(var(--ss-logo-width) - var(--ss-space-lg));
+	--ss-main-sidebar-width: 16em;
+	--ss-sidebar-width: calc(var(--ss-space-lg)*18.2);
+	--ss-aside-panel-width: 20em;
+	--ss-item-mask-height: calc(var(--ss-space-lg)*4);
+	--ss-item-mask-width: calc(var(--ss-aside-panel-width) - 1.3em);
+	--ss-item-box: calc(var(--ss-space-lg)*5.5);
+	--ss-account-panel-height: calc(var(--ss-space-lg)*4);
+	--ss-chat-wrapper-width: 14.5em;
+	--ss--chat-height: 14.5em;
+	--ss-media-social-width: 17.7em;
+	--paused-ui-scale: .6;
+	--paused-ui-vip-scale: .9;
+	--chw-bubble-width: 9em;
+	--chw-bubble-height: 3.3em;
+	--home-screen-r-padding: .68em;
+	/* shadows */
+	--ss-box-shadow-1:  .16em .16em 0 rgba(11, 147, 189,.5);
+	--ss-box-shadow-2: .15em .15em 0 rgba(11, 147, 189,.9);
+	--ss-box-shadow-3: .15em .15em 0 rgba(217,118,17,.9);
+    --ss-text-shadow-1: .1em .1em 0 rgba(11, 147, 189,.8);
+	--ss-shadow: rgba(0,0,0,.4);
+	--ss-btn-common-txt-shadow: .1em .1em 0 rgb(0 0 0 / 30%);
+	--ss-btn-common-txt-shadow-blur: .1em .1em .5em rgb(0 0 0 / 30%);
+	--ss-shadow-filter: drop-shadow(var(--ss-btn-common-txt-shadow));
+	/* button bevel */
+	--ss-btn-light-bevel: inset 0 .15em .2em;
+	--ss-btn-dark-bevel: inset -.1em -.15em .1em;
+	--ss-border-blue5: var(--ss-common-border-width) solid var(--ss-blue5);
+	--ss-type-icon-size: 2.8em;
+	--ss-equip-icon-size: 4em;
+	--ss-media-stats-height: 30.5em;
+	--gauge-timer-sec: 2deg;
+	--gauge-value-start: 0deg;
+	--gauge-value-end: 180deg;
+	--gauge-value: 180deg;
+	--gauge-shadow-blur: 2em;
+}
+
+/* ------------------------------NEW HOME SCREENS */
+
+.house-ad-wrapper {
+            display: none !important;
+}
+
+#ss_background {
+   background: url('https://raw.githubusercontent.com/darkstalkerl/Shell-Shocker-Themes/refs/heads/main/anime-style-clouds.webp')
+}
+
+.stat-wrapper .stat:nth-child(2n)>div {
+    background-color: var(--ss-blue1) !important;
+}
+
+.stat-wrapper .stat:nth-child(odd)>div {
+    background-color: var(--ss-blue3);
+}
+
+.btn_pink {
+    background-color: #9847d1 !important;
+    border-color: var(--ss-pink1)
+}
+
+#ico-checkmark path {
+        fill: #ffffff !important;
+        }
+/*.player-challenge-single-reward img{
+        width: 1em;
+        content: url("link");
+        }*/
+.player-challenges-container {
+        width: 50%;
+        background: linear-gradient(-30deg, rgba(161, 101, 227, 0.8) 40%, rgba(128, 42, 223, 0.8) 60%) !important;
+        }
+.player-challenge-single .checkmark-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 3em solid rgba(184, 140, 232, 0.8) !important;
+        border-right: 3em solid transparent;
+        }
+.player-challenge-single-action .bevel_pink {
+        border-color: #5c20c9 !important;
+    }
+
+.player-challenge-single-reward { /*egg number text*/
+    font-weight: 700;
+    color: #000000;
+    font-size: .7em
+}
+
+/*-----------------------------------Guns at bottom---*/
+#item_grid {
+	position: relative;
+	padding: 0 0.5em var(--ss-space-md) 0;
+  background: none;
+}
+
+.weapon_img:hover {
+    cursor: pointer;
+    border: #000000;
+    background: #3e0085;
+}
+
+
+/*-------------------------------------INGAME-------------------------------------*/
+
+/*#maskmiddle {
+	background: url('https://raw.githubusercontent.com/darkstalkerl/Shell-Shocker-Themes/refs/heads/main/boolet_scope.webp') center center no-repeat !important;
+	background-size: contain;
+  width: 120vh !important;
+	height: 120vh !important;
+}*/
+
+.is-paused .pause-ui-element {
+    background-color: #00000000 !important;
+    border: var(--ss-common-border-width) solid var(--ss-blue5);
+    bottom: 0;
+    width: var(--ss-chat-wrapper-width);
+    height: var(--ss--chat-height);
+    left: 0
+}
+
+#killTicker span[style*="color: #f53e40"] {
+  color: #B450FA !important;
+}
+/*
+#killTicker span[style*="color: #00ffff"] {
+  color: #fff !important;
+}
+*/
+
+#healthHp {
+	font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: var(--ss-white);
+    font-size: 1.2em;
+}
+
+.healthBar {
+	transform-origin: center;
+	transform: rotate(90deg);
+	fill: transparent;
+	stroke: #edeef7;
+	stroke-width: 1em;
+	stroke-dasharray: 14.4513em;
+	transition: all 0.3s linear(0 0%, 0.97 18.4%, 1.05 100.27%);
+}
+
+.healthYolk {
+	fill: #713ae8 !important;
+}
+
+.healthSvg {
+	width: 100%; height: 100%;
+}
+
+.crosshair {
+	position: absolute;
+	transform-origin: 50% top;
+	top: 50%;
+	border: solid 0.05em black;
+	height: 0.8em;
+	margin-bottom: 0.12em;
+	opacity: 100;
+}
+
+.crosshair.normal {
+  background: #4700ed !important;
+  border-color: #2b008f !important;
+  height:  7px;
+  width:  7px;
+  opacity: 0.8;
+}
+
+.crosshair.powerful {
+	left: calc(50% - 0.25em);
+	background: #ff0000;
+	width: 0.5em;
+}
+#reticleDot {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	background: #ffffff;
+	border: solid 0.01em #ffffff;
+	width: 0.1em;
+	height: 0.1em;
+	opacity: 0.7;
+}
+
+.shotReticle.fill.normal {
+    border-color: #151ce6 !important;
+    border-left: solid transparent;
+    border-right: solid transparent;
+    border-width: 0.em;
+    padding: 0.5em;
+}
+
+.shotReticle.fill.powerful {
+	border-color: #ff0000;
+	border-left: solid transparent;
+	border-right: solid transparent;
+	border-width: 0.3em;
+	padding: 0.1em;
+}
+
+.shotReticle.border.normal {
+	border-color: #151ce6 !important;
+	border-left: solid transparent;
+	border-right: solid transparent;
+	border-width: 0.1em;
+}
+
+.shotReticle.border.powerful {
+	border-color: #ea00ff;
+	border-left: solid transparent;
+	border-right: solid transparent;
+	border-width: 0.1em;
+}
+
+
+#grenadeThrowContainer {
+	position: absolute;
+	display: flex;
+	visibility: hidden;
+	align-items: flex-end;
+	top: 50%;
+	left: 50%;
+	transform: translate(-6em, -3em);
+	width: 1em;
+	height: 6em;
+	background: #9da7bd !important;
+	border-radius: 0.3em;
+	padding: 0.25em;
+}
+
+#grenadeThrow {
+	width: 100%;
+	height: 50%;
+	border-radius: 0.05em;
+	background: rgba(70, 79, 194, 0.8) !important;
+}
+
+</style>`
+    }
+    document.body ? addScript() : document.addEventListener("DOMContentLoaded", e => addScript());
+})();
