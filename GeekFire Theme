@@ -22,7 +22,7 @@
         document.title="Shell Shockers"
         document.head.innerHTML += `<style>
 
-:root {
+* {
 	--select-border: #777;
 	--select-focus: blue;
 	--select-arrow: var(--select-border);
@@ -184,7 +184,7 @@
 	position: absolute;
 	transform-origin: 50% top;
 	top: 50%;
-	border: solid 0.05em #2d2f45;
+	border: solid 0.05em #2d2f45 !important;
 	height: 0.8em;
 	margin-bottom: 0.12em;
 	opacity: 0.7;
@@ -192,12 +192,12 @@
 
 .crosshair.normal {
 	left: calc(50% - 0.15em);
-	background: #243996;
+	background: #243996 !important;
 	width: 0.3em;
 }
 
 .crosshair.powerful {
-	left: calc(50% - 0.25em);
+	left: calc(50% - 0.25em) !important;
 	background: #ff0000;
 	width: 0.5em;
 }
@@ -206,14 +206,14 @@
 	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
-	background: #243996;
+	background: #243996 !important;
 	width: 0.3em;
 	height: 0.3em;
 	opacity: 0.7;
 }
 
 .shotReticle.fill.normal {
-    border-color: #243996;
+    border-color: #243996 !important;
     border-left: solid transparent;
     border-right: solid transparent;
     border-width: 0.18em;
@@ -221,7 +221,7 @@
 }
 
 .shotReticle.fill.powerful {
-	border-color: #243996;
+	border-color: #243996 !important;
 	border-left: solid transparent;
 	border-right: solid transparent;
 	border-width: 0.2em;
@@ -229,14 +229,14 @@
 }
 
 .shotReticle.border.normal {
-	border-color: #243996;
+	border-color: #243996 !important;
 	border-left: solid transparent;
 	border-right: solid transparent;
 	border-width: 0.2em;
 }
 
 .shotReticle.border.powerful {
-	border-color: #ea00ff;
+	border-color: #ea00ff !important;
 	border-left: solid transparent;
 	border-right: solid transparent;
 	border-width: 0.2em;
@@ -267,12 +267,12 @@
 
 .weapon_img:hover {
     cursor: pointer;
-    border: #2e2720;
-    background: #2e2720;
+    border: #2e2720 !important;
+    background: #2e2720 !important;
 }
 
 #weapon_select .weapon_selected {
-	background-color: #2e2720;
+	background-color: #2e2720 !important;
 }
 
 
@@ -336,7 +336,7 @@
 	transform: translate(-6em, -3em);
 	width: 1em;
 	height: 6em;
-	background: #9da7bd;
+	background: #9da7bd !important;
 	border-radius: 0.3em;
 	padding: 0.25em;
 }
