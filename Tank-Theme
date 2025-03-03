@@ -176,7 +176,9 @@
 	--gauge-shadow-blur: 2em;
 }
 
-
+#ss_background {
+   background: url('https://raw.githubusercontent.com/darkstalkerl/Shell-Shocker-Themes/main/ss_theme_background.webp')
+}
 
 /*------------------------------------------------Crosshair-----*/
 
@@ -185,7 +187,7 @@
 	position: absolute;
 	transform-origin: 50% top;
 	top: 50%;
-	border: solid 0.05em #2d2f45;
+	border: solid 0.05em #2d2f45 !important;
 	height: 0.8em;
 	margin-bottom: 0.12em;
 	opacity: 0.7;
@@ -193,13 +195,13 @@
 
 .crosshair.normal {
 	left: calc(50% - 0.15em);
-	background: #243996;
+	background: #243996 !important;
 	width: 0.3em;
 }
 
 .crosshair.powerful {
 	left: calc(50% - 0.25em);
-	background: #ff0000;
+	background: #ff0000 !important;
 	width: 0.5em;
 }
 #reticleDot {
@@ -207,14 +209,14 @@
 	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
-	background: #243996;
+	background: #243996 !important;
 	width: 0.3em;
 	height: 0.3em;
 	opacity: 0.7;
 }
 
 .shotReticle.fill.normal {
-    border-color: #243996;
+    border-color: #243996 !important;
     border-left: solid transparent;
     border-right: solid transparent;
     border-width: 0.18em;
@@ -222,7 +224,7 @@
 }
 
 .shotReticle.fill.powerful {
-	border-color: #243996;
+	border-color: #243996 !important;
 	border-left: solid transparent;
 	border-right: solid transparent;
 	border-width: 0.2em;
@@ -230,14 +232,14 @@
 }
 
 .shotReticle.border.normal {
-	border-color: #243996;
+	border-color: #243996 !important;
 	border-left: solid transparent;
 	border-right: solid transparent;
 	border-width: 0.2em;
 }
 
 .shotReticle.border.powerful {
-	border-color: #ea00ff;
+	border-color: #ea00ff !important;
 	border-left: solid transparent;
 	border-right: solid transparent;
 	border-width: 0.2em;
@@ -254,7 +256,7 @@
 /*-----------------------------------Guns at bottom---*/
 #item_grid {
 	position: relative;
-	padding: 0 0.5em var(--ss-space-md) 0;
+	padding: 0 0.5em var(--ss-space-md) 0 !important;
   background: none;
 }
 
@@ -268,12 +270,12 @@
 
 .weapon_img:hover {
     cursor: pointer;
-    border: #2e2720;
-    background: #2e2720;
+    border: #2e2720 !important;
+    background: #2e2720 !important;
 }
 
 #weapon_select .weapon_selected {
-	background-color: #2e2720;
+	background-color: #2e2720 !important;
 }
 
 
@@ -337,7 +339,7 @@
 	transform: translate(-6em, -3em);
 	width: 1em;
 	height: 6em;
-	background: #9da7bd;
+	background: #9da7bd !important;
 	border-radius: 0.3em;
 	padding: 0.25em;
 }
@@ -346,7 +348,7 @@
 	width: 100%;
 	height: 50%;
 	border-radius: 0.05em;
-	background: linear-gradient(0deg, rgba(253, 252, 255, 1), rgba(255, 254, 250, 1), rgba(206, 207, 245, 1), rgba(154, 156, 217, 1), rgba(99, 102, 214, 1), rgba(69, 73, 209, 1), rgba(42, 38, 163, 1), rgba(33, 37, 163, 1), rgba(14, 18, 135, 1));
+	background: linear-gradient(0deg, rgba(253, 252, 255, 1), rgba(255, 254, 250, 1), rgba(206, 207, 245, 1), rgba(154, 156, 217, 1), rgba(99, 102, 214, 1), rgba(69, 73, 209, 1), rgba(42, 38, 163, 1), rgba(33, 37, 163, 1), rgba(14, 18, 135, 1)) !important;
 }
 
 /* ------------------------------NEW HOME SCREENS */
@@ -358,7 +360,7 @@
 
 .main-menu-button { /*Text on buttons on left*/
 	  border: 0;
-	  color: #FFFFFF;
+	  color: #FFFFFF !important;
 	  padding: .3em var(--ss-space-md) var(--ss-space-md) calc(var(--ss-space-lg)*1.5);
 	  margin-top: 0.3em;
 	  transform: translateX(-.5em);
@@ -463,10 +465,10 @@
     background: #aa977d; /*Modified: .tab-content | Previously:'Blank, added extra line'*/
 }
 .tab-content .media-item:nth-child(odd) {
-    background: #ab8a55; /*Modified: .tab-content .media-item:nth-child(odd) | Previously:'Blank, added extra line'*/
+    background: #ab8a55 !important; /*Modified: .tab-content .media-item:nth-child(odd) | Previously:'Blank, added extra line'*/
 }
 .tab-content .media-item:nth-child(even) {
-	background: #aa977d; /*Modified: .tab-content .media-item:nth-child(even) | Previously:'background: var(--ss-blue1);'*/
+	background: #aa977d !important; /*Modified: .tab-content .media-item:nth-child(even) | Previously:'background: var(--ss-blue1);'*/
 }
 
 /*-----------------------Profile Page---*/
@@ -475,19 +477,19 @@
 }
 
 .stat-wrapper .stat:nth-child(even) > div {
-	background-color: #2e2720; /*Modified: .stat-wrapper .stat:nth-child(even) > div | Previously:'background-color: #77cbe6;'*/
+	background-color: #2e2720 !important; /*Modified: .stat-wrapper .stat:nth-child(even) > div | Previously:'background-color: #77cbe6;'*/
 }
 
 .stat-wrapper .stat:nth-child(odd) > div {
-	background-color: #544332; /*Modified: .stat-wrapper .stat:nth-child(odd) > div | Previously:'background-color: var(--ss-blue3);'*/
+	background-color: #544332 !important; /*Modified: .stat-wrapper .stat:nth-child(odd) > div | Previously:'background-color: var(--ss-blue3);'*/
 }
 
 /* ----------------------------------------------------------------- HUD -- */
-
+/*
 #kill-death-box .killed h3 {
     content: "you beat ";
 }
-
+*/
 </style>`
     }
     document.body ? addScript() : document.addEventListener("DOMContentLoaded", e => addScript());
